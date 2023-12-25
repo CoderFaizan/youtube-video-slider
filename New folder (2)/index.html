@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <!-- <div id=""> -->
+            <div class="hero hero1" id="hero1"><div class="one"></div><div class="two"><p>Haroon(A.S)</p></div><div class="three"></div><div class="four"><p>119 Years</p></div></div>
+        <div class="hero hero2" id="hero2"><div class="one"></div><div class="two"><p>Haroon(A.S)</p></div><div class="three"></div><div class="four"><p>119 Years</p></div></div>
+        <div class="hero hero3" id="hero3"><div class="one"></div><div class="two"><p>Haroon(A.S)</p></div><div class="three"></div><div class="four"><p>119 Years</p></div></div>
+        <div class="hero hero4" id="hero4"><div class="one"></div><div class="two"><p>Haroon(A.S)</p></div><div class="three"></div><div class="four"><p>119 Years</p></div></div>
+        <div class="hero hero5" id="hero5"><div class="one"></div><div class="two"><p>Haroon(A.S)</p></div><div class="three"></div><div class="four"><p>119 Years</p></div></div>
+        <div class="hero hero6" id="hero6"><div class="one"></div><div class="two"><p>Haroon(A.S)</p></div><div class="three"></div><div class="four"><p>119 Years</p></div></div>
+        <div class="hero hero7" id="hero7"><div class="one"></div><div class="two"><p>Haroon(A.S)</p></div><div class="three"></div><div class="four"><p>119 Years</p></div></div>
+        <div class="hero hero8" id="hero8"><div class="one"></div><div class="two"><p>Haroon(A.S)</p></div><div class="three"></div><div class="four"><p>119 Years</p></div></div>
+        <div class="hero hero9" id="hero9"><div class="one"></div><div class="two"><p>Haroon(A.S)</p></div><div class="three"></div><div class="four"><p>119 Years</p></div></div>
+        <div class="hero hero10" id="hero10"><div class="one"></div><div class="two"><p>Haroon(A.S)</p></div><div class="three"></div><div class="four"><p>119 Years</p></div></div>
+        <div class="hero hero11" id="hero11"><div class="one"></div><div class="two"><p>Haroon(A.S)</p></div><div class="three"></div><div class="four"><p>119 Years</p></div></div>
+        <div class="hero hero12" id="hero12"><div class="one"></div><div class="two"><p>Haroon(A.S)</p></div><div class="three"></div><div class="four"><p>119 Years</p></div></div>
+        <div class="hero hero13" id="hero13"><div class="one"></div><div class="two"><p>Haroon(A.S)</p></div><div class="three"></div><div class="four"><p>119 Years</p></div></div>
+        <div class="hero hero14" id="hero14"><div class="one"></div><div class="two"><p>Haroon(A.S)</p></div><div class="three"></div><div class="four"><p>119 Years</p></div></div>
+        <div class="hero hero15" id="hero15"><div class="one"></div><div class="two"><p>Haroon(A.S)</p></div><div class="three"></div><div class="four"><p>119 Years</p></div></div>
+        <div class="hero hero16" id="hero16"><div class="one"></div><div class="two"><p>Haroon(A.S)</p></div><div class="three"></div><div class="four"><p>119 Years</p></div></div>
+        <div class="hero hero17" id="hero17"><div class="one"></div><div class="two"><p>Haroon(A.S)</p></div><div class="three"></div><div class="four"><p>119 Years</p></div></div>
+        <div class="hero hero18" id="hero18"><div class="one"></div><div class="two"><p>Haroon(A.S)</p></div><div class="three"></div><div class="four"><p>119 Years</p></div></div>
+        <div class="hero hero19" id="hero19"><div class="one"></div><div class="two"><p>Haroon(A.S)</p></div><div class="three"></div><div class="four"><p>119 Years</p></div></div>
+        <div class="hero hero20" id="hero20"><div class="one"></div><div class="two"><p>Haroon(A.S)</p></div><div class="three"></div><div class="four"><p>119 Years</p></div></div>
+        </div>
+    <!-- </div> -->
+    <h2
+    id="e">1</h2>
+</body>
+</html>
+<script>
+    var tt = document.getElementsByClassName("hero");
+    var ttl = tt.length;
+
+    for(var i =2;  i<=ttl; i=i+2){
+        document.getElementById("hero"+i).style.boxShadow="1px 10px 30px rgba(0, 0, 0, 0.8)";
+        document.getElementById("hero"+i).style.marginTop="5px";
+        // document.getElementById("hero"+i).style.backgroundColor="pink";
+    }
+    var l=0;
+    for(var q = 1;  q<=20; q++){
+        document.getElementById("hero"+q).style.left=l+"px";
+        l=l+240;
+        // console.log(l+"length"+ttl);
+    }
+    var l=0;
+    var i=1;
+    setInterval(function(){
+        for(var q = 1;  q<=20; q++){
+        document.getElementById("e").innerText=l;
+        l=l-1;
+        document.getElementById("hero"+q).style.marginLeft=l+"px";
+    }
+    },190)
+</script>
